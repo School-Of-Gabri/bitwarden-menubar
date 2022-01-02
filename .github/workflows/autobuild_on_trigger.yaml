@@ -14,6 +14,8 @@ jobs:
       - name: Get swift version
         run: swift --version
       - name: Build
+        working-directory: ./Bitwarden.xcodeproj
         run: swift build
       - name: Run tests
+        working-directory: ./Bitwarden.xcodeproj
         run: swift test

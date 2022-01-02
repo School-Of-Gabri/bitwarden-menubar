@@ -10,9 +10,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: fwal/setup-swift@v1
       - name: Get swift version
         run: swift --version
-      - uses: fwal/setup-swift@v1
       - name: Build
         run: swift build
       - name: Run tests
